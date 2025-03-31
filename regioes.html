@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="HTML, CSS">
+		<meta name="author" content="Ryan Pires">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	  <link rel="icon" alt="pokeball" href="img/pokeball.svg">
+		<title>Regiões | Pokémon Wiki</title>
+	</head>
+  <body style="background-image: url(img/Iniciais.png);">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: rgb(1, 13, 78);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/pokeball.svg" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="background-color: rgb(96, 119, 253);">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" style="background: #c32025;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: whitesmoke;"><span class="badge" style="background-color: rgb(134, 5, 5);">Pokémon Wiki</span></h5>
+            <span class="badge"><button type="button" class="btn" onclick="myFunction()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke" style="margin-left: 5px;"></i></button></span>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: black;"><i class="fa-solid fa-house" style="font-size: 32px; color: black; padding-right: 15px;"></i>Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="regioes.html" style="color: black;"><i class="fa-solid fa-map-location-dot" style="font-size: 32px; color: black; padding-left: 5px; padding-right: 15px;"></i>Regiões</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokebolas.html" style="color: black;"><img src="img/pokeball(1).svg" width="40" height="40" style="padding-left: 3px; padding-right: 13px;">Pokébolas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokemons-mais-fortes.html" style="color: black;"><i class="fa-solid fa-hand-fist" style="font-size: 35px; padding-left: 8px; padding-right: 18px;"></i>Pokemons mais fortes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokemons-principais.html" style="color: black;"><img src="img/pikachu.svg" width="40" height="40" style="padding-left: 3px; padding-right: 13px;">Pokemons principais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shinies.html" style="color: black;"><img src="img/shiny.svg" width="40" height="40" style="padding-left: 3px; padding-right: 13px;">Shinies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formas.html" style="color: black;"><i class="fa-solid fa-shuffle" style="font-size: 32px; color: black; padding-left: 5px; padding-right: 15px;"></i>Formas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="campeoes.html" style="color: black;"><i class="fa-solid fa-trophy" style="font-size: 32px; color: black; padding-left: 5px; padding-right: 15px;"></i>Campeões</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="viloes.html" style="color: black;"><i class="fa-solid fa-skull" style="font-size: 32px; color: black; padding-left: 5px; padding-right: 15px;"></i>Vilões</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html" style="color: black;"><i class="fa-solid fa-clipboard" style="font-size: 32px; color: black; padding-left: 9px; padding-right: 19px;"></i>Formalário</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container card">
+        <h1>Regiões</h1>
+        <img src="img/Mapa.jpg" alt="mapa-mundo-de-pokémon" class="img-fluid img-thumbnail img-pokemon">
+        <a class="nav-link dropdown-toggle" href="regiões.html" role="button" style="margin-top: 5px; margin-bottom: 5px;" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;"><i class="fa-solid fa-map-location-dot" style="font-size: 32px; color: black; padding-left: 5px; padding-right: 15px;"></i>Regiões</a>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="#Kanto">Kanto</a></li>
+          <li><a class="dropdown-item" href="#Johto">Johto</a></li>
+          <li><a class="dropdown-item" href="#Hoenn">Hoenn</a></li>
+          <li><a class="dropdown-item" href="#Sinnoh">Sinnoh</a></li>
+          <li><a class="dropdown-item" href="#Unova">Unova</a></li>
+          <li><a class="dropdown-item" href="#Kalos">Kalos</a></li>
+          <li><a class="dropdown-item" href="#Alola">Alola</a></li>
+          <li><a class="dropdown-item" href="#Galar">Galar</a></li>
+          <li><a class="dropdown-item" href="#Hisui">Hisui</a></li>
+          <li><a class="dropdown-item" href="#Paldea">Paldea</a></li>
+        </ul>
+        <h3 id="Kanto">Kanto</h3>
+        <p>A Região de Kanto é a primeira região apresentada na série de jogos
+          e é a região mais famosa da franquia, contando com os iniciais:
+          Bulbasaur, Charmander e Squirtle; e os lendários: Zapdos, Moltres,
+          Articuno e Mewtwo.</p>
+        <img src="img/kanto.png" alt="mapa-de-kanto" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Johto">Johto</h3>
+        <p>A Região de Johto é a psegunda região apresentada na série de jogos
+          também famosa, porém nem tanto quanto Kanto, contando com os iniciais:
+          Chicorita, Cyndaquil e Totodile; e os lendários: Raikou, Entei,
+          Suicune, Lugia e Ho-oh.</p>
+        <img src="img/Johto.jpg" alt="mapa-de-johto" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Hoenn">Hoenn</h3>
+        <p>A Região de Hoenn é a terceira região apresentada na série de jogos
+          e é a região com os melhores pokémon, contando com os iniciais:
+          Treecko, Torchic e Mudkip; e os lendários: Groudon, Kyogre,
+          Rayquaza, Regirock, Regice, Registeel, Latios e Latias.</p>
+        <img src="img/Hoenn.jpg" alt="mapa-de-hoenn" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Sinnoh">Sinnoh</h3>
+        <p>A Região de Sinnoh é a quarta região apresentada na série de jogos
+          e é a região com uma das melhores histórias, contando com os iniciais:
+          Turtwig, Chimchar e Piplup; e os lendários: Dialga, Palkia, Giratina
+          Cresselia, Regigigas, Mesprit, Uxie e Azelf.</p>
+        <img src="img/Sinnoh.jpg" alt="mapa-de-sinnoh" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Unova">Unova</h3>
+        <p>A Região de Unova é a quinta região apresentada na série de jogos
+          e tem dos melhores jogos pokémon, contando com os iniciais:
+          Snivy, Tepig e Oshawott; e os lendários: Reshiram, Zekrom,
+          Kyurem, Cobalion, Virazion, Terrakion, Thundurus, Tornadus e Landorus.</p>
+        <img src="img/Unova.jpg" alt="mapa-de-unova" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Kalos">Kalos</h3>
+        <p>A Região de Kalos é a sexta região apresentada na série de jogos
+          e inovou os jogos pokémon com o 3D, contando com os iniciais:
+          Chespin, Fenekin e Froakie; e os lendários: Yveltal, Xerneas e
+          Zygarde.</p>
+        <img src="img/Kalos.png" alt="mapa-de-kalos" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Alola">Alola</h3>
+        <p>A Região de Alola é a sétima região apresentada na série de jogos
+          e foi onde apresentou as famosas ultrabeasts, contando com os iniciais:
+          Rowlet, Litten e Popplio; e os lendários: Solgaleo, Lunala, Cosmog, Cosmoen
+          Tapu-Koko, Tapu-Bulu, Tapu-Fini, Tapu-Lele, Type: Null e Silvally.</p>
+        <img src="img/Alola.jpg" alt="mapa-de-alola" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Galar">Galar</h3>
+        <p>A Região de Galar é a oitava região apresentada na série de jogos
+          e foi onde apresentou as formas Gigantamax, contando com os iniciais:
+          Grookey, Scorbunny e Sobbie; e os lendários: Eternatus, Zacian, Zamazenta,
+          Regidrago, Regieleki, Kubfu, Urshifu, Calirex, Spectrier, Glastrier, Zapdos
+          de Galar, Articuno de Galar e Articuno de Galar.</p>
+        <img src="img/Galar.jpg" alt="mapa-de-galar" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Hisui">Hisui</h3>
+        <p>A Região de Hisui é antiga região de Sinnoh apresentada na série de jogos
+          e foi onde apresentou um mundo aberto com captura e estilo de batalhas diferentes, 
+          conta com os iniciais: Rowlet, Cyndaquil e Oshawott; e o lendário: Eternamorus.</p>
+        <img src="img/Hisui.png" alt="mapa-de-hisui" class="img-fluid img-thumbnail img-pokemon">
+        <h3 id="Paldea">Paldea</h3>
+        <p>A Região de Paldea é a nona região e última região apresentada na série de 
+          jogos até o momento, contando com os iniciais: Sprigatito, Fuecoco e Quaxly;
+           e os lendários: Koraidon, Miraidon, Chi-Yu, Ting-Lu, Chien-Pao.</p>
+        <img src="img/Paldea.jpg" alt="mapa-de-paldea" class="img-fluid img-thumbnail img-pokemon">  
+        <nav aria-label="Page navigation example" style="margin-top: 15px;">
+          <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="index.html" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>        
+            <li class="page-item"><a class="page-link hidden-xs" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="regioes.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="pokebolas.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="pokemons-mais-fortes.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="pokemons-principais.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="shinies.html">6</a></li>
+            <li class="page-item"><a class="page-link hidden-xs" href="formas.html">7</a></li>
+            <li class="page-item"><a class="page-link hidden-xs" href="campeoes.html">8</a></li>
+            <li class="page-item"><a class="page-link hidden-xs" href="viloes.html">9</a></li>
+            <li class="page-item"><a class="page-link hidden-xs" href="formulario.html">10</a></li>
+            <li class="page-item">
+              <a class="page-link" href="pokebolas.html" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>        
+          </ul>
+        </nav>    
+      </div>
+    </section>
+    <footer class="container card">
+      <p style="text-align: center;">&#169; Todos os direitos reservados 2024</p>
+    </footer>     
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/config.json" ></script>	
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
